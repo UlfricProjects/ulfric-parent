@@ -1,2 +1,2 @@
-# ms-parent
-MineServices Parent
+# ulfric-parent
+Ulfric Parent
