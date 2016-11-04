@@ -1,3 +1,5 @@
+# Upstream: https://github.com/omnivion/gitfiles/blob/master/java/.gitattributes
+
 # Copied from google/guava
 
 # Auto detect text files and perform LF normalization
