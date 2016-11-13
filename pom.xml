@@ -37,6 +37,18 @@
 			</plugin>
 
 			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.junit.platform</groupId>
+						<artifactId>junit-platform-surefire-provider</artifactId>
+						<version>1.0.0-M2</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+
+			<plugin>
 				<groupId>org.gaul</groupId>
 				<artifactId>modernizer-maven-plugin</artifactId>
 				<version>1.4.0</version>
@@ -63,11 +75,29 @@
 			<version>3.5</version>
 		</dependency>
 
-		<!-- TESTING -->
+		<!-- TESTING 
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.0.0-M2</version>
+			<scope>test</scope>
+		</dependency> -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.0.0-M2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.truth</groupId>
+			<artifactId>truth</artifactId>
+			<version>0.30</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.truth.extensions</groupId>
+			<artifactId>truth-java8-extension</artifactId>
+			<version>0.30</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
