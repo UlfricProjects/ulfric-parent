@@ -44,6 +44,7 @@
 					<disableXmlReport>true</disableXmlReport>
 					<failIfNoTests>true</failIfNoTests>
 					<printSummary>false</printSummary>
+					<useFile>false</useFile>
 				</configuration>
 				<dependencies>
 					<dependency>
