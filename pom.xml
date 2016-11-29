@@ -43,6 +43,7 @@
 				<configuration>
 					<disableXmlReport>true</disableXmlReport>
 					<failIfNoTests>true</failIfNoTests>
+					<printSummary>false</printSummary>
 				</configuration>
 				<dependencies>
 					<dependency>
