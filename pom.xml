@@ -27,17 +27,6 @@
 
 		<plugins>
 			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.6.0</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-					<optimize>true</optimize>
-					<failOnWarning>true</failOnWarning>
-				</configuration>
-			</plugin>
-
-			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.19.1</version>
 				<configuration>
@@ -53,6 +42,35 @@
 						<version>1.0.0-M2</version>
 					</dependency>
 				</dependencies>
+			</plugin>
+
+			<plugin>
+				<groupId>org.gaul</groupId>
+				<artifactId>modernizer-maven-plugin</artifactId>
+				<version>1.4.0</version>
+				<configuration>
+					<javaVersion>1.8</javaVersion>
+				</configuration>
+				<executions>
+					<execution>
+						<id>modernizer</id>
+						<phase>package</phase>
+						<goals>
+							<goal>modernizer</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<optimize>true</optimize>
+					<failOnWarning>true</failOnWarning>
+				</configuration>
 			</plugin>
 
 			<plugin>
@@ -77,24 +95,6 @@
 				<configuration>
 					<retryOnError>false</retryOnError>
 				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.gaul</groupId>
-				<artifactId>modernizer-maven-plugin</artifactId>
-				<version>1.4.0</version>
-				<configuration>
-					<javaVersion>1.8</javaVersion>
-				</configuration>
-				<executions>
-					<execution>
-						<id>modernizer</id>
-						<phase>package</phase>
-						<goals>
-							<goal>modernizer</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
