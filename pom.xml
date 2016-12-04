@@ -31,7 +31,6 @@
 				<version>2.19.1</version>
 				<configuration>
 					<disableXmlReport>true</disableXmlReport>
-					<failIfNoTests>true</failIfNoTests>
 					<printSummary>false</printSummary>
 					<useFile>false</useFile>
 				</configuration>
