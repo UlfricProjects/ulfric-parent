@@ -21,6 +21,7 @@
 					<include>**/*.yml</include>
 					<include>**/*.xml</include>
 					<include>**/*.json</include>
+					<include>**/*.md</include>
 				</includes>
 			</resource>
 		</resources>
