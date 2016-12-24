@@ -17,12 +17,6 @@
 				<targetPath>.</targetPath>
 				<filtering>true</filtering>
 				<directory>${basedir}/src/main/resources/</directory>
-				<includes>
-					<include>**/*.yml</include>
-					<include>**/*.xml</include>
-					<include>**/*.json</include>
-					<include>**/*.md</include>
-				</includes>
 			</resource>
 		</resources>
 
