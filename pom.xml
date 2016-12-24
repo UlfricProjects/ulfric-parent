@@ -93,6 +93,12 @@
 			<version>3.5</version>
 		</dependency>
 
+		<dependency>
+			<groupId>net.bytebuddy</groupId>
+			<artifactId>byte-buddy</artifactId>
+			<version>1.5.10</version>
+		</dependency>
+
 		<!-- TESTING -->
 		<dependency>
 			<groupId>com.ulfric.verify</groupId>
