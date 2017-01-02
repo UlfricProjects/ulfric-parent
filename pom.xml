@@ -188,7 +188,7 @@
 	<distributionManagement>
 		<repository>
 			<id>nexus</id>
-			<url>http://repo.dev.ulfric.com:8081/repository/maven-snapshots/</url>
+			<url>http://repo.dev.ulfric.com:8081/repository/all/</url>
 		</repository>
 	</distributionManagement>
 
