@@ -33,7 +33,7 @@
 					<dependency>
 						<groupId>org.junit.platform</groupId>
 						<artifactId>junit-platform-surefire-provider</artifactId>
-						<version>1.0.0-M2</version>
+						<version>1.0.0-M3</version>
 					</dependency>
 				</dependencies>
 			</plugin>
@@ -48,9 +48,34 @@
 				<executions>
 					<execution>
 						<id>modernizer</id>
-						<phase>package</phase>
+						<phase>verify</phase>
 						<goals>
 							<goal>modernizer</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.7.8</version>
+				<configuration>
+					<destFile>${basedir}/target/coverage/jacoco.exec</destFile>
+					<dataFile>${basedir}/target/coverage/jacoco.exec</dataFile>
+				</configuration>
+				<executions>
+					<execution>
+						<id>jacoco-initialize</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>jacoco-site</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>report</goal>
 						</goals>
 					</execution>
 				</executions>
