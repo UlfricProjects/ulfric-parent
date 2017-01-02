@@ -86,6 +86,9 @@
 							<goal>check</goal>
 						</goals>
 						<configuration>
+							<excludes>
+								<exclude>**/${project.name}*</exclude>
+							</excludes>
 							<rules>
 								<rule>
 									<limits>
