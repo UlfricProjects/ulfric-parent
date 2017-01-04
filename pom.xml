@@ -145,12 +145,14 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.5</version>
+			<scope>compile</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>net.bytebuddy</groupId>
 			<artifactId>byte-buddy</artifactId>
 			<version>1.5.13</version>
+			<scope>compile</scope>
 		</dependency>
 
 		<!-- TESTING -->
@@ -196,5 +198,12 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<url>http://repo.dev.ulfric.com:8081/repository/maven-releases/</url>
+		</repository>
+	</distributionManagement>
 
 </project>
