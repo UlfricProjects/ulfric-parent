@@ -20,7 +20,6 @@
 			</resource>
 
 			<resource>
-				<filtering>true</filtering>
 				<directory>${basedir}/src/it/gherkin/</directory>
 			</resource>
 		</resources>
