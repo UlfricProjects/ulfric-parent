@@ -12,7 +12,6 @@
 	<build>
 		<defaultGoal>clean install</defaultGoal>
 		<finalName>${project.artifactId}</finalName>
-		<sourceDirectory>.</sourceDirectory>
 
 		<resources>
 			<resource>
@@ -21,6 +20,7 @@
 			</resource>
 
 			<resource>
+				<filtering>true</filtering>
 				<directory>${basedir}/src/it/gherkin/</directory>
 			</resource>
 		</resources>
@@ -122,10 +122,6 @@
 					<target>1.8</target>
 					<optimize>true</optimize>
 					<failOnWarning>true</failOnWarning>
-					<includes>
-						<include>src/main/java/**/*.java</include>
-						<include>src/it/java/**/*.java</include>
-					</includes>
 				</configuration>
 			</plugin>
 
