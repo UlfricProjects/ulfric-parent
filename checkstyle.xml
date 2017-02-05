@@ -150,6 +150,7 @@
 				</module>
 				<module name="ParameterNumber">
 						<property name="max" value="3"/>
+						<property name="tokens" value="METHOD_DEF"/>
 						<property name="ignoreOverriddenMethods" value="true"/>
 				</module>
 				<module name="AnnotationLocation">
