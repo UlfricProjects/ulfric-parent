@@ -45,9 +45,9 @@
 			<plugin>
 				<groupId>org.gaul</groupId>
 				<artifactId>modernizer-maven-plugin</artifactId>
-				<version>1.4.0</version>
+				<version>1.5.0</version>
 				<configuration>
-					<javaVersion>1.8</javaVersion>
+					<javaVersion>1.9</javaVersion>
 				</configuration>
 				<executions>
 					<execution>
@@ -115,20 +115,11 @@
 
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.6.0</version>
+				<version>3.6.1</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<release>9</release>
 					<optimize>true</optimize>
 					<failOnWarning>true</failOnWarning>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>3.0.2</version>
-				<configuration>
-					<skipIfEmpty>true</skipIfEmpty>
 				</configuration>
 			</plugin>
 
@@ -161,7 +152,7 @@
 		<dependency>
 			<groupId>net.bytebuddy</groupId>
 			<artifactId>byte-buddy</artifactId>
-			<version>1.6.3</version>
+			<version>1.6.7</version>
 			<scope>compile</scope>
 		</dependency>
 
