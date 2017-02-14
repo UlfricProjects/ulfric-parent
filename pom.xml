@@ -47,7 +47,7 @@
 				<artifactId>modernizer-maven-plugin</artifactId>
 				<version>1.5.0</version>
 				<configuration>
-					<javaVersion>1.9</javaVersion>
+					<javaVersion>1.8</javaVersion>
 				</configuration>
 				<executions>
 					<execution>
@@ -63,7 +63,7 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.7.8</version>
+				<version>0.7.9</version>
 				<configuration>
 					<destFile>${basedir}/target/coverage/jacoco.exec</destFile>
 					<dataFile>${basedir}/target/coverage/jacoco.exec</dataFile>
@@ -117,7 +117,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.6.1</version>
 				<configuration>
-					<release>9</release>
+					<source>1.8</source>
+					<target>1.8</target>
 					<optimize>true</optimize>
 					<failOnWarning>true</failOnWarning>
 				</configuration>
@@ -152,7 +153,7 @@
 		<dependency>
 			<groupId>net.bytebuddy</groupId>
 			<artifactId>byte-buddy</artifactId>
-			<version>1.6.7</version>
+			<version>1.6.8</version>
 			<scope>compile</scope>
 		</dependency>
 
