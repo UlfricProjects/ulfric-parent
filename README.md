@@ -1,2 +1,2 @@
 # ulfric-parent
-Ulfric Parent
+Parent pom used in all Maven projects.
